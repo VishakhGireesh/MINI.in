@@ -10,7 +10,7 @@ var swiper = new Swiper(".mySwiper", {
       el: ".swiper-pagination",
       clickable: true,
     },
-    // autoplay: {
-    //     delay: 3000,
-    //   },
+    autoplay: {
+        delay: 3000,
+      },
   });
