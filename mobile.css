@@ -4,7 +4,6 @@
     }
 
     header .logo img {
-        padding-top:20px;
         width: 70px;
     }
 
@@ -30,9 +29,9 @@
         position: absolute;
         justify-content: space-between;
         flex-flow: column;
-        background-color:#1b1b1e4d;
+        background-color: #1b1b1e4d;
         right: 0;
-        gap:5px;
+        gap: 5px;
         transform: translateY(0%);
         z-index: 2;
         transition: all ease 0.8s;
@@ -48,14 +47,16 @@
     header .menu a {
         color: aliceblue;
         font-size: 20px;
-        font-weight: 400;
-        letter-spacing:1px;
+        font-weight: 900;
+        letter-spacing: 1px;
 
+    }
+    .menu a:hover {
+        color:#8338b5;
     }
 
     header nav {
-        background: linear-gradient(to right, rgb(0, 0, 0), rgb(21, 8, 164));
-
+        background: linear-gradient(to right, rgb(0, 0, 0), #662095);
     }
 
     .hero img {
@@ -65,22 +66,46 @@
         object-position: center;
 
     }
+
     header .menu-icon img {
         padding-top: 20px;
         left: auto;
         right: 99;
     }
-.hero .swiper-pagination .swiper-pagination-bullet {
-    width: 18px;
-    height: 18px;
-    background: transparent;
-    border: 2px solid white;
-    opacity: 1;
-    transition: all linear 1s;
-}
-.hero .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
-    border: 3px solid red;
-    width: 23px;
-    height: 23px;
-}
+
+    .hero .swiper-pagination .swiper-pagination-bullet {
+        width: 18px;
+        height: 18px;
+        background: transparent;
+        border: 2px solid rgba(255, 255, 255, 0.338);
+        opacity: 1;
+        transition: all linear 1s;
+    }
+
+    .hero .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        border: 2px solid rgb(255, 255, 255);
+        width: 23px;
+        height: 23px;
+        background:#662095;
+    }
+
+    .hero .swiper-pagination {
+        bottom: 180px;
+        text-align: right;
+        left: auto;
+        padding-right: 40px;
+    }
+    .hero-info .cta-btn {
+        background:  #662095;
+        border-right: 3px solid #aa5eddae;
+        border-bottom: 3px solid  #aa5eddae;
+        font-weight: 600;
+        transition: background, border, ease 0.9s;
+    }
+    .cta-btn:hover {
+        background: rgba(0, 0, 0, 0.67);
+        border-right: 2px solid rgba(255, 255, 255, 0.514);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.514);
+    }
+    
 }

@@ -16,8 +16,8 @@ a {
 }
 
 body {
-    height: 100vh;
     overflow: hidden;
+    height: 100vh;
 }
 
 header .logo img {
@@ -84,6 +84,7 @@ header .menu a {
 
 .hero {
     position: relative;
+   
 }
 
 .hero-info {

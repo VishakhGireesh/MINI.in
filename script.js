@@ -6,6 +6,7 @@ icon.addEventListener('click', function(){
 var swiper = new Swiper(".mySwiper", {
     speed:3000,
     spaceBetween: 0,
+    loop:true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
